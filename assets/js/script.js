@@ -7,6 +7,7 @@ window.addEventListener('load', () => {
     let restorePushElem = JSON.parse(localStorage.getItem('savePushElem'));
 
     let addToDoList = function () {
+        // restoreContent может быт null
         for (let i = 0; i < restoreContent.length; i++) {
             pushElem[i] = restorePushElem[i];
             content[i] = restoreContent[i];
